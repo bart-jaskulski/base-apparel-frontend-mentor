@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: process.cwd(),
     filename: '[name].js',
-    publicPath: '/',
+    publicPath: './',
   },
   module: {
     rules: [

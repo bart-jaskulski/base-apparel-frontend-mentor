@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 const CopyPlugin = require( "copy-webpack-plugin" );
@@ -11,6 +11,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
+    path: process.cwd(),
     filename: '[name].js',
     publicPath: '/',
   },
@@ -43,7 +44,7 @@ module.exports = {
       filename: '[name].css'
     } ),
 
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
 
     // Copy files from target to destination.
 		new CopyPlugin( {

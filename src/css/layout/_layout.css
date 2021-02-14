@@ -1,0 +1,15 @@
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  grid-template: 100px auto / 1fr max-content;
+
+  & > img {
+    grid-row: span 2;
+  }
+}
+
+header, main {
+  margin: auto;
+  width: 45ch;
+}

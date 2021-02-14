@@ -1,0 +1,26 @@
+/**
+ * Custom Media Queries
+ * Works like Custom Properties, except for media queries.
+ *
+ * @link: https://drafts.csswg.org/mediaqueries-5/#custom-mq
+ **/
+
+/* Exclusion targeting */
+@custom-media --small-only (max-width: 360px);
+@custom-media --medium-only (min-width: 360px) and (max-width: 800px);
+@custom-media --large-only (min-width: 1000px) and (max-width: 1200px);
+@custom-media --xlarge-only (min-width: 1200px);
+
+/* Inclusion targeting */
+@custom-media --medium (min-width: 600px);
+@custom-media --medium-large (min-width: 800px);
+@custom-media --large (min-width: 1000px);
+@custom-media --xlarge (min-width: 1200px);
+
+
+
+@custom-media --small (max-width: 48em);
+@custom-media --medium (min-width: 600px);
+@custom-media --medium-large (min-width: 800px);
+@custom-media --large (min-width: 1000px);
+@custom-media --xlarge (min-width: 1200px);

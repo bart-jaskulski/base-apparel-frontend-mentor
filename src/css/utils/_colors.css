@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+## Custom block colors.
+--------------------------------------------------------------*/
+
+.has-theme-primary-color {
+  color: var(--color-theme-primary);
+}
+
+.has-theme-primary-background-color {
+  background-color: var(--color-theme-primary);
+}
+
+.has-theme-secondary-color {
+  color: var(--color-theme-secondary);
+}
+
+.has-theme-secondary-background-color {
+  background-color: var(--color-theme-secondary);
+}
+
+.has-theme-black-color {
+  color: var(--color-theme-black);
+}
+
+.has-theme-black-background-color {
+  background-color: var(--color-theme-black);
+}
+
+.has-theme-dark-color {
+  color: var(--color-theme-dark);
+}
+
+.has-theme-dark-background-color {
+  background-color: var(--color-theme-dark);
+}
+
+.has-theme-white-color {
+  color: var(--color-theme-white);
+}
+
+.has-theme-white-background-color {
+  background-color: var(--color-theme-white);
+}

@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+/**
+ * Inherit box-sizing to make it easier to change the property for
+ * components that leverage other behavior; see
+ * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  line-height: var(--global-font-line-height);
+}
+
+body {
+  position: relative;
+  background: var(--color-theme-white);
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+}
